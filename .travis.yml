@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- 0.1
+deploy:
+  provider: heroku
+  buildpack: nodejs
+  api_key:
+    secure: GkMVqeITk1sXEw+MtiwFjkoL8SJDe4gOi3eM9OauNp1nK9eiw9r0N+GcpFl126sEMyW3bdPKxmVOCcrXfmLl2oCZQqTUzXSd9cBRx0xXTyuiSsSOwUzp1NVrXM787/vzZI+RnywlTTd0/SuxIzE/4DQSYGIL1IRJyqAwGwi18IeDyoRPhqqj3rOfJc/g36mFukdHtXdBI9hfmIfwCKymUIv1ypvfFgbZibmAC/SF8LHDOQO7RArUmHtZip/SxSHouzAVVwzKJSvYHeuu9S2Ljk2HMiHzIQXAkMSzib8CRLg/hgq1CN+9WAtB9KsogS8Euq7W/uOvfW68tI9QfAQ8FA5jCa9fAY5IQ2b1NFE1f948H7j/0yQGA94VYlf3/vUB6suHas3dJiuWCpCmNG3lrntDsXH8ys7K+5AnOGs0o9QhecgWUst6VZqg0l2xAzsOxuVmPFRpL8uRQn9er56JzUAuSTijcM6dNyLSjad2Xtn/b90dnyQwHUH8//JHbj8O/bMs0eeoDi8GTmT9Qx4oHTNivxTC7r48CPhEHQTHPVg2H7fJZXIsEwaA/w1QKhCxbzfNR4L3ceyfhLKOqaWtTtEVScALrRpGc2yZxjdE44Rmc8rc+ufu3TYOYm0b8RObpck+JVISEeGLz1SfI8j4ITeiqXoyJ9eyWZyaqjOu+c8=
+  app: nodejs-heroku-test
+  on:
+    repo: onlineth/node-js-getting-started
